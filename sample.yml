@@ -1,7 +1,5 @@
-- hosts: all
-  tasks:
-     - ping:
-- name: First play book
+- name: check connectivity with all hosts
+  hosts: all
   tasks:
     - name: check ping status
       ansible.builtin.ping:
